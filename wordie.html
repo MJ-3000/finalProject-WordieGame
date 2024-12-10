@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title>Wordie</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        
+        <link rel="stylesheet" href="wordie.css">
+        
+    </head>
+
+    <body>
+        <h1 id="title"><img src="Wordie.png" alt="logo" style="width:200px;height:200px;"></h1>
+        <button class = "og_button" onclick="openPopup()">Rules!</button>
+       
+        <div id="board">
+        </div>
+        <br>
+        <h1 id="answer"></h1>
+        <button type="button" id="newRoundButton" onclick="location.reload();"> New Game </button>
+        
+        <div class="confettiCanvas" id="confettiCanvas">
+        </div>
+
+
+        <div class="bg_popUp" id="bg_popUp">
+            <div class="popUp_content" id="popUp_content">
+                <img class=popupLogo src="Wordie.png" alt="tinyLogo">
+
+                <div class="popupText" style="font-size: 9px;" >
+                    <h1 style="text-align: left;" >  When the color is: </h1> 
+                    <h2 style="margin-left: 10px;" >  This means that the letter is in the correct position</h2>
+                    <img class = pink src="pink.png" alt="">
+
+                    <h1 style="text-align: left;" > When the color is: </h1> 
+                    <h2 style="margin-left: 25px;" > This means that the letter is in the wrong position but is a letter in the answer</h2>
+                    <img class="yellow" src="yellow.png" alt="">
+
+                    <h1 style="text-align: left;" > When the color is: </h1> 
+                    <h2 style="margin-left: 10px;" > This means that the letter is not in the answer at all</h2>
+                    <img class = "purple" src="purple.png" alt="">
+                </div>
+                <button type="button" class = "close" onclick="closePopup()">Close!</button>
+                
+            </div>
+        </div>
+
+        
+        <script src="wordie.js"></script>    
+    </body>
+</html>
